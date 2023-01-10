@@ -78,13 +78,13 @@
      <br></br>
 
      <?php 
-     $color = $_GET["color"];
-     $pluralNoun = $_GET["pluralNoun"];
-     $celebrity = $_GET["celebrity"];
+   //   $color = $_GET["color"];
+   //   $pluralNoun = $_GET["pluralNoun"];
+   //   $celebrity = $_GET["celebrity"];
 
-      echo "Roses are $color <br>";
-      echo "$pluralNoun are blue <br>";
-      echo "I love $celebrity <br>";
+   //    echo "Roses are $color <br>";
+   //    echo "$pluralNoun are blue <br>";
+   //    echo "I love $celebrity <br>";
      ?> -->
 
      <!-- URL Parameters -->
@@ -97,7 +97,7 @@
 
      <?php
 
-         echo $_GET["age"];
+         // echo $_GET["age"];
      
      ?> 
 
@@ -110,7 +110,7 @@
      <br></br>
 
      <?php
-      echo $_GET["password"];
+      // echo $_GET["password"];
      ?> 
 
       <form action="site.php" method="post">
@@ -120,7 +120,7 @@
       <br></br>
 
       <?php
-         echo $_POST["password"];
+         // echo $_POST["password"];
       ?> -->
 
       <!-- Arrays -->
@@ -151,22 +151,305 @@
       // ?> -->
 
       <!-- Associative Arrays -->
+      <!-- php's version of objects -->
 
-      <form action="site.php" method="post">
+      <!-- <form action="site.php" method="post">
          <input type="text" name="student">
          <input type="submit">
       </form>
 
       <?php 
 
-         $grades = array("Jim" => "A+", "Pam"=>"B-", "Oscar"=>"C+");
-         // // echo $grades["Jim"];
-         // echo $grades["Jim"] ="F <br>";
-         // echo count($grades);
-         echo $grades[$_POST["student"]];
+         // $grades = array("Jim" => "A+", "Pam"=>"B-", "Oscar"=>"C+");
+         // // // echo $grades["Jim"];
+         // // echo $grades["Jim"] ="F <br>";
+         // // echo count($grades);
+         // echo $grades[$_POST["student"]];
 
       
+      ?> -->
+
+      <!-- Functions -->
+
+      <!-- <?php
+
+         // function sayHi($name){
+         //    echo "Hello $name <br>";
+         // }
+
+         // sayHi("Mike");
+         // sayHi("Dave");
+         // sayHi("Tom");
+
+
+      ?> -->
+
+      <!-- Return Statements -->
+<!-- 
+      <?php
+
+         // function cube($num){
+         //    return $num * $num * $num;
+         // }
+
+         // $cubeResult = cube(4);
+
+         // echo $cubeResult
+      
+      ?> -->
+
+      <!-- If Statements -->
+<!-- 
+      <?php
+
+         // $isMale = false;
+         // $isTall = true;
+         // if ($isMale && $isTall){
+         //    echo "You are a tall male";
+         // } elseif ($isMale && !$isTall) {
+         //    echo "You are male but not tall";
+         // } elseif (!$isMale && $isTall) {
+         //    echo "You are not male but are tall";
+         // } else {
+         //    echo "You are not male";
+         // }
+
+      ?> -->
+
+      <!-- If Statements cont. -->
+
+      <?php
+
+      // function getMax($num1, $num2){
+      //    if ($num1 > $num2){
+      //       echo $num1;
+      //    } elseif($num1 == $num2) {
+      //       echo "These numbers are equal to eachother";
+      //    } else{
+      //       echo $num2;
+      //    }
+      // }
+      
+      // echo getMax(90, 3)
+      
+      // ?>
+
+      <!-- Building a better calculator -->
+
+      <!-- <form action="site.php" method="post">
+         First Num:<input type="number" name="num1"><br>
+         OP: <input type="text" name="op"><br>
+         Second Num:<input type="number" name="num2"><br>
+         <input type="submit">
+      </form>
+
+      <?php
+      
+         // $num1 = $_POST["num1"];
+         // $num2 = $_POST["num2"];
+         // $op = $_POST["op"];
+
+         // if($op == "+"){
+         //    echo $num1 + $num2;
+         // } elseif($op == "-") {
+         //    echo $num1 - $num2;
+         // } elseif($op == "*") {
+         //    echo $num1 * $num2;
+         // } elseif($op == "/") {
+         //    echo $num1 / $num2;
+         // } else {
+         //    echo "Invalid operator";
+         // }
+
+
+      ?> -->
+
+      <!-- Switch Statements -->
+
+      <!-- <form action="site.php" method="post">
+         What was your grade?
+         <input type="text" name="grade">
+         <input type="submit">
+      </form>
+
+      <?php
+         // $grade = $_POST["grade"];
+         // switch($grade){
+         //    case "A":
+         //       echo "You did amazing!";
+         //       break;
+         //    case "B":
+         //       echo "You did pretty good";
+         //       break;
+         //    case "C":
+         //       echo "you did okay";
+         //    case
+         // }
+      
+      ?> -->
+
+      <!-- While Loops -->
+
+      <!-- <?php
+      
+            // $index = 6;
+
+            // do{
+            //    echo "$index <br>";
+            //    $index++;
+            // }while($index <= 5)
+            
+            // while($index <= 5){
+            //    echo "$index <br>";
+            //    $index++;
+            // }
+
+      ?> -->
+
+      <!-- For Loops -->
+
+      <!-- <?php
+      
+               // // $index =1;
+               // // while($index <= 5){
+               // //    echo "$index <br>";
+               // //    $index++;
+               // // }
+               // $luckyNumbers = array( 4, 8, 14, 16, 23, 42);
+            
+               // for($i = 0; $i < count($luckyNumbers); $i++){
+               //    echo "$luckyNumbers[$i] <br>";
+               // }
+      
+      ?> -->
+
+      <!-- Including HTML -->
+
+      <!-- <?php include "header.html"?>
+      <p>Hello World</p>
+      <?php include "footer.html"?> -->
+
+   
+      <!-- Include: PHP -->
+<!-- 
+      <?php 
+      // $title = "My first post";
+      // $author = "Mike";
+      // $wordCount = 450;
+      //    include "article-header.php"
+      ?> -->
+
+      <!-- Classes & Objects -->
+
+      <!-- <?php
+      //   class Book{
+      //    var $title;
+      //    var $author;
+      //    var $pages;
+      //   }
+
+      //   $book1 = new Book;
+      //   $book1 ->title = "Harry Potter";
+      //   $book1 ->author = "JK Rowling";
+      //   $book1->pages=400;
+
+      //   $book2 = new Book;
+      //   $book2 ->title = "Lord of the Rigns";
+      //   $book2 ->author = "JRR Tolkein";
+      //   $book2->pages=700;
+
+      //   echo $book1->author;
+      //   echo $book2->title;
+      
+      ?> -->
+
+      <!-- Constructors -->
+
+      <!-- <?php
+      //   class Book{
+      //    var $title;
+      //    var $author;
+      //    var $pages;
+
+      //    function __construct($aTitle, $aAuthor, $aPages){
+      //       $this->title = $aTitle;
+      //       $this->author = $aAuthor;
+      //       $this->pages = $aPages;
+
+      //    }
+      //   }
+
+      //   $book1 = new Book("Harry Potter", "JK Rowling", 400 );
+
+      //   $book2 = new Book("Lord of the Rigns", "Lord of the Rigns", 700 );
+
+      //   echo $book1->title;
+      //   echo $book2->title;
+
+
+      //   echo $book1->author;
+      //   echo $book2->title;
+      
+      ?> -->
+
+      <!-- Object Functions -->
+
+      <!-- <?php
+      //   class Student {
+      //    var $name;
+      //    var $major;
+      //    var $gpa;
+
+      //    function __construct($name, $major, $gpa){
+      //       $this->name = $name;
+      //       $this->major = $major;
+      //       $this->gpa - $gpa;
+      //    }
+
+      //    function hasHonors(){
+      //       if($this->gpa >= 3.5){
+      //          return "true";
+      //       }
+      //       return "false";
+      //    }
+      //   }
+
+      //   $student1 = new Student("Jim", "Business", 3.8);
+      //   $student2 = new Student("Pam", "Art", 3.6);
+
+      //   echo $student1->hasHonors();
+      //?>
+
+      <?php
+         class Movie{
+            public $title;
+            private $rating;
+
+            function __construct($title, $rating){
+               $this->title = $title;
+               $this->rating = $rating;
+            }
+
+            function getRating() {
+               return $this->rating;
+            }
+         }
+
+         $avengers = new Movie("Avengers", "PG-13");
+
+         echo $avengers->getRating;
+
       ?>
+
+   //?>
+
+
+
+
+
+
+
+
 
 
 </body>
